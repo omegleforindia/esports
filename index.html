@@ -1,17 +1,87 @@
-<!DOCTYPE html>
-<html>
+Tournament App UI 
+ 
+Gaurav Golak Majumdar
+modderguy240@gmail.com
+My Profile
+My Stats
+My Wallet & Voucher
+Update KYC
+Leaderboard
+My Played Quiz
+My Referrals
+Deposit Limit
+Settings
+Responsible Gaming
+Tutorial
+Telegram
+<!-- Main content --> <main class="main-content"> <!-- Top Bar --> <header class="top-bar"> <div class="balance-display"> <span>Balance: ₹0.00</span> </div> <div class="notification"></div> </header> <!-- Games/Tournaments Section --> <section class="game-list"> <h2>Games</h2> <div class="game-grid"> <div class="game-card">Ludo Adda</div> <div class="game-card">Ludo Quick</div> <div class="game-card">Rummy Adda</div> <div class="game-card">Call Break</div> <div class="game-card">Word Search</div> <div class="game-card">Quiz Time</div> </div> </section> <!-- Bottom Navigation --> <footer class="bottom-nav"> <button>Gifts</button> <button>Quizzes</button> <button>Home</button> <button>Winners</button> <button>Help</button> </footer> </main><!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>eSports Tournament</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tournament App UI</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <h1>Welcome to eSports!</h1>
-  <button onclick="addTestData()">Add Test Tournament</button>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <div class="profile">
+        <img src="logo.png" alt="User Logo" class="profile-img" />
+        <h3>Gaurav Golak Majumdar</h3>
+        <p>modderguy240@gmail.com</p>
+      </div>
+      <ul class="menu">
+        <li>My Profile</li>
+        <li>My Stats</li>
+        <li>My Wallet & Voucher</li>
+        <li>Update KYC</li>
+        <li>Leaderboard</li>
+        <li>My Played Quiz</li>
+        <li>My Referrals</li>
+        <li>Deposit Limit</li>
+        <li>Settings</li>
+        <li>Responsible Gaming</li>
+        <li>Tutorial</li>
+      </ul>
+      <div class="social">
+        <p>Telegram</p>
+      </div>
+    </nav>
 
-  <!-- Firebase SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+    <!-- Main content -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <header class="top-bar">
+        <div class="balance-display">
+          <span>Balance: ₹0.00</span>
+        </div>
+        <div class="notification"></div>
+      </header>
 
-  <!-- Your custom JavaScript -->
-  <script src="script.js"></script>
+      <!-- Games/Tournaments Section -->
+      <section class="game-list">
+        <h2>Games</h2>
+        <div class="game-grid">
+          <div class="game-card">Ludo Adda</div>
+          <div class="game-card">Ludo Quick</div>
+          <div class="game-card">Rummy Adda</div>
+          <div class="game-card">Call Break</div>
+          <div class="game-card">Word Search</div>
+          <div class="game-card">Quiz Time</div>
+        </div>
+      </section>
+
+      <!-- Bottom Navigation -->
+      <footer class="bottom-nav">
+        <button>Gifts</button>
+        <button>Quizzes</button>
+        <button>Home</button>
+        <button>Winners</button>
+        <button>Help</button>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
