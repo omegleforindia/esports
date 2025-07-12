@@ -19,3 +19,15 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+function addTournament(title, date) {
+  db.collection("tournaments").add({
+    title: title,
+    date: date,
+    createdAt: new Date()
+  }).then(() => {
+    alert("Tournament added!");
+  }).catch((error) => {
+    console.error("Error adding tournament:", error);
+  });
+}
